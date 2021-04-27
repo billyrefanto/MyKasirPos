@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">MyKasirPos</string>
+    <string name="register">Register</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="konfirmasi_password">Konfirmasi Password</string>
+    <string name="nama_toko">Nama Toko</string>
+    <string name="no_telp">No. Telp</string>
+    <string name="alamat_toko">Alamat Toko</string>
+    <string name="daftar">Daftar</string>
 </resources>
