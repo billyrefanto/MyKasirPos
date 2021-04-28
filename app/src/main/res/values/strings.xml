@@ -4,4 +4,9 @@
     <string name="nama_barang">Nama Barang</string>
     <string name="stock">Stock</string>
     <string name="Jenis">Jenis</string>
+    <string name="login">Login</string>
+    <string name="masuk">Masuk</string>
+    <string name="forget">Forget</string>
+    <string name="daftar">Daftar</string>
+    <string name="ingatkan">Ingatkan</string>
 </resources>
