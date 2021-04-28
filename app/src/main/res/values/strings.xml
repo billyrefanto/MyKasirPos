@@ -16,4 +16,8 @@
     <string name="daftar">Daftar</string>
     <string name="team">Team</string>
     <string name="potato_inc">Potato Inc</string>
+    <string name="ingat_saya">Ingat Saya</string>
+    <string name="login">Login</string>
+    <string name="masuk">Masuk</string>
+    <string name="lupa_password">Lupa Password?</string>
 </resources>
