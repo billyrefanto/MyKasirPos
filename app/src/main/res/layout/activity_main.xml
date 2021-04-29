@@ -24,22 +24,26 @@
         android:layout_width="214dp"
         android:layout_height="50dp"
         android:ems="10"
+        android:hint="@string/username"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@id/passlogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login" />
+        app:layout_constraintTop_toBottomOf="@id/login"
+        android:autofillHints="@string/username" />
 
     <EditText
         android:id="@+id/passlogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@id/checkBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/unamelogin" />
+        app:layout_constraintTop_toBottomOf="@id/unamelogin"
+        android:autofillHints="@string/password" />
 
     <Button
         android:id="@+id/buttonlogin"
@@ -57,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="@string/forget"
+        android:text="@string/lupa_password"
         app:layout_constraintEnd_toStartOf="@id/textView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonlogin" />
@@ -76,7 +80,7 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ingat"
+        android:text="@string/ingat_saya"
         app:layout_constraintBottom_toTopOf="@id/buttonlogin"
         app:layout_constraintStart_toStartOf="@id/passlogin"
         app:layout_constraintTop_toBottomOf="@id/passlogin" />
