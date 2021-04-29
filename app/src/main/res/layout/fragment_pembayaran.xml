@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/bayar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bayar"
+        app:layout_constraintBottom_toTopOf="@id/uang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/total" />
+
+    <TextView
+        android:id="@+id/uang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/uang"
+        app:layout_constraintBottom_toTopOf="@id/uangEdit"
+        app:layout_constraintStart_toStartOf="@id/uangEdit"
+        app:layout_constraintTop_toBottomOf="@id/bayar" />
+
+    <EditText
+        android:id="@+id/uangEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/uang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonLimaRibu"/>
+
+    <Button
+        android:id="@+id/buttonLimaRibu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lima_ribu"
+        app:layout_constraintBottom_toTopOf="@id/buttonDuaPuluh"
+        app:layout_constraintEnd_toStartOf="@id/buttonSepuluhRibu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/uangEdit" />
+
+    <Button
+        android:id="@+id/buttonSepuluhRibu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sepuluh_ribu"
+        app:layout_constraintBottom_toTopOf="@id/buttonDuaPuluh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonLimaRibu"
+        app:layout_constraintTop_toBottomOf="@id/uangEdit" />
+
+    <Button
+        android:id="@+id/buttonDuaPuluh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dua_puluh"
+        app:layout_constraintBottom_toTopOf="@id/buttonSeratus"
+        app:layout_constraintEnd_toStartOf="@id/buttonLimaPuluh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonLimaRibu" />
+
+    <Button
+        android:id="@+id/buttonLimaPuluh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lima_puluh"
+        app:layout_constraintBottom_toTopOf="@id/buttonSeratus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonDuaPuluh"
+        app:layout_constraintTop_toBottomOf="@id/buttonLimaRibu" />
+
+    <Button
+        android:id="@+id/buttonSeratus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seratus_ribu"
+        app:layout_constraintBottom_toTopOf="@id/kembalian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonDuaPuluh" />
+
+    <TextView
+        android:id="@+id/kembalian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kembalian"
+        app:layout_constraintBottom_toTopOf="@id/buttonBayar"
+        app:layout_constraintStart_toStartOf="@id/buttonBayar"
+        app:layout_constraintTop_toBottomOf="@id/buttonSeratus" />
+
+    <Button
+        android:id="@+id/buttonBayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pembayaran"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kembalian" />
+</androidx.constraintlayout.widget.ConstraintLayout>
