@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    app:startDestination="@id/homepage">
+
+    <fragment
+        android:id="@+id/homepage"
+        android:name="org.d3if4041.mykasirpos.ui.homepage"
+        android:label="homepage" >
+        <action
+            android:id="@+id/action_homepage_to_fungsiContoh"
+            app:destination="@id/fungsiContoh" />
+    </fragment>
+    <fragment
+        android:id="@+id/fungsiContoh"
+        android:name="org.d3if4041.mykasirpos.ui.FungsiContoh"
+        android:label="FungsiContoh" />
+</navigation>
