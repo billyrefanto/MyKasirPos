@@ -16,7 +16,7 @@ class RegisterFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentRegisterBinding.inflate(inflater, container, false)
-        binding.btnReg.setOnClickListener {}
+        binding.btnReg.setOnClickListener { register() }
         return binding.root
     }
 
