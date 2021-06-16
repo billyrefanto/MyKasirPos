@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Transaksi"
+        android:id="@+id/option_transaksi"
+        app:showAsAction="never" />
+    <item
+        android:title="Daftar Transaksi"
+        android:id="@+id/option_daftar_transaksi"
+        app:showAsAction="never" />
+    <item
+        android:title="Tambah Produk"
+        android:id="@+id/option_tambah_produk"
+        app:showAsAction="never" />
+    <item
+        android:title="Daftar Produk"
+        android:id="@+id/option_daftar_produk"
+        app:showAsAction="never" />
+</menu>

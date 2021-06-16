@@ -24,4 +24,18 @@
         android:name="org.d3if4041.mykasirpos.ui.PembayaranFragment"
         android:label="PembayaranFragment"
         tools:layout="@layout/fragment_pembayaran"/>
+
+
+    <fragment
+        android:id="@+id/homepage"
+        android:name="org.d3if4041.mykasirpos.ui.homepage"
+        android:label="homepage" >
+        <action
+            android:id="@+id/action_homepage_to_fungsiContoh"
+            app:destination="@id/fungsiContoh" />
+    </fragment>
+    <fragment
+        android:id="@+id/fungsiContoh"
+        android:name="org.d3if4041.mykasirpos.ui.FungsiContoh"
+        android:label="FungsiContoh" />
 </navigation>
