@@ -92,19 +92,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/seratus_ribu"
-        app:layout_constraintBottom_toTopOf="@id/kembalian"
+        app:layout_constraintBottom_toTopOf="@id/buttonBayar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonDuaPuluh" />
-
-    <TextView
-        android:id="@+id/kembalian"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/kembalian"
-        app:layout_constraintBottom_toTopOf="@id/buttonBayar"
-        app:layout_constraintStart_toStartOf="@id/buttonBayar"
-        app:layout_constraintTop_toBottomOf="@id/buttonSeratus" />
 
     <Button
         android:id="@+id/buttonBayar"
@@ -114,5 +105,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/kembalian" />
+        app:layout_constraintTop_toBottomOf="@id/buttonSeratus" />
 </androidx.constraintlayout.widget.ConstraintLayout>

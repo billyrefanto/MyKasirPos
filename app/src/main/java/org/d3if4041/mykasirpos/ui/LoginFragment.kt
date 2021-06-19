@@ -16,7 +16,7 @@ class LoginFragment : Fragment() {
     private lateinit var binding: FragmentLoginBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        binding = FragmentLoginBinding.inflate(inflater, container, false)
+        binding = FragmentLoginBinding.inflate(layoutInflater, container, false)
         binding.buttonlogin.setOnClickListener {login()}
         binding.registrasi.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
@@ -36,6 +36,7 @@ class LoginFragment : Fragment() {
             Toast.makeText(context, "password salah", Toast.LENGTH_LONG).show()
             return
         }
+        findNavController().navigate(R.id.action_loginFragment_to_homepage)
     }
 
 }

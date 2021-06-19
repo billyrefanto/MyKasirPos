@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homepage"
+            app:destination="@id/homepage" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -28,14 +31,35 @@
 
     <fragment
         android:id="@+id/homepage"
-        android:name="org.d3if4041.mykasirpos.ui.homepage"
-        android:label="homepage" >
+        android:name="org.d3if4041.mykasirpos.ui.HomeFragment"
+        android:label="homepage"
+        tools:layout="@layout/fragment_homepage">
         <action
             android:id="@+id/action_homepage_to_fungsiContoh"
             app:destination="@id/fungsiContoh" />
+        <action
+            android:id="@+id/action_homepage_to_tambahFragment"
+            app:destination="@id/tambahFragment" />
+        <action
+            android:id="@+id/action_homepage_to_checkoutFragment"
+            app:destination="@id/checkoutFragment" />
     </fragment>
     <fragment
         android:id="@+id/fungsiContoh"
         android:name="org.d3if4041.mykasirpos.ui.FungsiContoh"
         android:label="FungsiContoh" />
+    <fragment
+        android:id="@+id/tambahFragment"
+        android:name="org.d3if4041.mykasirpos.ui.TambahFragment"
+        android:label="TambahFragment"
+        tools:layout="@layout/fragment_tambah"/>
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="org.d3if4041.mykasirpos.ui.CheckoutFragment"
+        android:label="CheckoutFragment"
+        tools:layout="@layout/fragment_checkout">
+        <action
+            android:id="@+id/action_checkoutFragment_to_pembayaranFragment"
+            app:destination="@id/pembayaranFragment" />
+    </fragment>
 </navigation>
